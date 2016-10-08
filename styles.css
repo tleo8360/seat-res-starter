@@ -5,12 +5,20 @@ body {
 }
 
 h1 {
-  font-family: serif;
+  font-family: Georgia, serif;
   color: white;
+  font-size: 36px;
+  font-weight: bold;
   text-align: center;
+  padding: 10px;
 }
-
+#reserve{
+  font-size: 20px;
+  font-weight: bolder;
+}
 p {
+  text-align: center;
+  font-size: 18px;
   font-family: serif;
   color: white;
 }
