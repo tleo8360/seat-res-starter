@@ -37,3 +37,12 @@ p {
   display: inline-block;
   border-radius: 50%;
 }
+form {
+  color: white;
+}
+.contact {
+  color: white;
+}
+input {
+  color: blue;
+}
