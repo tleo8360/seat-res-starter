@@ -53,3 +53,10 @@ form {
 input {
   color: blue;
 }
+
+.showing {
+  font-family: serif;
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+}
