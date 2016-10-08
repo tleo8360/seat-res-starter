@@ -5,16 +5,18 @@
 
 .available {
   background-color: green;
-  width: 24%;
+  width: 12%;
   margin: auto;
   min-height: 100px;
   display: inline-block;
+  border-radius: 50%;
 }
 
 .reserved {
   background-color: red;
-  width: 24%;
+  width: 12%;
   margin: auto;
   min-height: 100px;
   display: inline-block;
+  border-radius: 50%;
 }
