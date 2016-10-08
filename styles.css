@@ -1,6 +1,5 @@
 body {
-  background-image: url(http://blog.berlin.bard.edu/wp-content/uploads/2014/04/Cover-photo-no-caption-needed.jpg);
-  background-repeat: no-repeat;
+  background-image: url("http://blog.berlin.bard.edu/wp-content/uploads/2014/04/Cover-photo-no-caption-needed.jpg");
   background-size: cover;
 }
 
