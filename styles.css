@@ -6,11 +6,20 @@ body {
 h1 {
   font-family: Georgia, serif;
   color: white;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
-  padding: 10px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  border: dashed;
 }
+.text{
+  font-family: Verdana;
+  padding: 5px;
+
+}
+
 #reserve{
   font-size: 20px;
   font-weight: bolder;
@@ -24,11 +33,13 @@ p {
 
 .seat-chart {
   width: 90%;
-  margin: 0 auto;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 .available {
   background-color: gray;
+  opacity: .9;
   width: 12%;
   margin: auto;
   min-height: 100px;
@@ -38,25 +49,44 @@ p {
 
 .reserved {
   background-color: white;
+  opacity: .9;
   width: 12%;
   margin: auto;
   min-height: 100px;
   display: inline-block;
   border-radius: 50%;
 }
-form {
+
+#form{
+  position: relative;
+  z-index: 2;
+  float:right;
+  width: 60%;
+  border: white solid 1px;
+  border-radius: 10px;
+  font-style: Verdana;
   color: white;
-}
-.contact {
-  color: white;
-}
-input {
-  color: blue;
 }
 
-.showing {
-  font-family: serif;
+.contact {
+  margin: auto;
+  font-size: 30px;
+  text-align: center;
   color: white;
-  width: 90%;
+}
+
+input {
+  color: red;
+}
+
+
+.showing {
+  position: absolute;;
+  margin: 20px;
+  height: 300px;
+  width: 300px;
+  font-family: serif;
+  font-size: 24px;
+  color: white;
   margin: 0 auto;
 }
