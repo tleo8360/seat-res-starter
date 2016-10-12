@@ -85,8 +85,11 @@ input {
   margin: 20px;
   height: 300px;
   width: 300px;
-  font-family: serif;
+  font-family: verdana;
   font-size: 24px;
   color: white;
   margin: 0 auto;
+}
+h2 {
+  text-align: center;
 }
