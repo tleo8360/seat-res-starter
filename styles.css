@@ -94,5 +94,7 @@ h2 {
   text-align: center;
 }
 .popcorn {
-  
+  position: absolute;
+  top: 900px;
+  left: auto;
 }
