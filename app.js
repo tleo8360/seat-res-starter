@@ -4,26 +4,36 @@
 //   var result = window.prompt("Enter name")
 //   $(this).console.log("result");
 // });
-$(".available").on("click", function(){
-  $(this).addClass("reserved");
-});
 
 $("#form").hide();
+
 $(".available").on("click", function(){
+  var seat = $(this);
+  var name;
+  var email;
+  seat.addClass("reserved");
   $("#form").show();
+
+  $(".submit").on("click", function(e){
+    var thisForm = $(this);
+    e.preventDefault();
+    name = $("#name").val();
+    email = $("#email").val();
+    seat.html(name);
+    console.log(name, email);
+    $('#form').hide();
+  });
+
 });
 
-$(".submit").on("click", function(){
-  $(this).hide();
-});
 
-// var name = $("#name").val();
-// var email = $("#email").val();
-//
+
+
+
 // $(".submit").on("click", function(){
-//   $(".reserved").append("<p>hi</p>");
+//   $(".reserved").append();
 // });
-//
+
 // $(".reserved").on("hover", function(){
-//   $(this).show()
+//   $(this).
 // })
