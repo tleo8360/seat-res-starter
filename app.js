@@ -19,7 +19,7 @@ $(".available").on("click", function(){
     e.preventDefault();
     name = $("#name").val();
     email = $("#email").val();
-    seat.html(name);
+    seat.html(name + "; " + email);
     console.log(name, email);
     $('#form').hide();
   });
