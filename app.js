@@ -8,11 +8,22 @@ $(".available").on("click", function(){
   $(this).addClass("reserved");
 });
 
-$("form").hide();
+$("#form").hide();
 $(".available").on("click", function(){
-  $("form").show();
+  $("#form").show();
 });
 
 $(".submit").on("click", function(){
   $(this).hide();
 });
+
+// var name = $("#name").val();
+// var email = $("#email").val();
+//
+// $(".submit").on("click", function(){
+//   $(".reserved").append("<p>hi</p>");
+// });
+//
+// $(".reserved").on("hover", function(){
+//   $(this).show()
+// })
