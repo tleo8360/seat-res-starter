@@ -15,7 +15,6 @@ $(".available").on("click", function(){
   $("#form").show();
 
   $(".submit").on("click", function(e){
-    var thisForm = $(this);
     e.preventDefault();
     name = $("#name").val();
     email = $("#email").val();
