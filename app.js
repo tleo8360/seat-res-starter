@@ -1,38 +1,8 @@
+for (var i = 0; i < 24; i ++) {
+var newSeat = $("<div class='available'></div>");
+$(".seat-chart").append(newSeat);
+}
 
-//
-// $(".available").on("click", function(){
-//   var result = window.prompt("Enter name")
-//   $(this).console.log("result");
-// });
-
-$("#form").hide();
-
-$(".available").on("click", function(){
-  var seat = $(this);
-  var name;
-  var email;
-  seat.addClass("reserved");
-  $("#form").show();
-
-  $(".submit").on("click", function(e){
-    e.preventDefault();
-    name = $("#name").val();
-    email = $("#email").val();
-    seat.html(name + "; " + email);
-    console.log(name, email);
-    $('#form').hide();
-  });
-
+$(".available, .reserved").on("click", function(){
+  $(this).toogleClass("reserved available");
 });
-
-
-
-
-
-// $(".submit").on("click", function(){
-//   $(".reserved").append();
-// });
-
-// $(".reserved").on("hover", function(){
-//   $(this).
-// })
