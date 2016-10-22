@@ -9,14 +9,16 @@ var currentSeat;
 $(".available").on("click", function(){
   $("form").show();
   currentSeat = $(this).attr('id');
-  console.log(currentSeat);
 });
 
 $("button").on("click", function(){
+  var name = $("[name="name"]").val();
+  var email = $("[name="email"]").val();
   var userData = {
-    name: "",
-    email: ""
+    name: name,
+    email: email
   };
+  console.log(userData);
   $("form").hide();
   $("#" + currentSeat).toogleClass("reserved available");
 });
